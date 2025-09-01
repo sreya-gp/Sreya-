@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Learning Experience</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f7fa;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #0077b6;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #0077b6;
+      margin-bottom: 10px;
+    }
+    ul {
+      margin-top: 10px;
+      line-height: 1.8;
+    }
+    .highlight {
+      background: #caf0f8;
+      padding: 8px;
+      border-left: 5px solid #0077b6;
+      margin-bottom: 15px;
+      border-radius: 5px;
+    }
+    button {
+      background: #0077b6;
+      color: white;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    button:hover {
+      background: #023e8a;
+    }
+    #extra {
+      display: none;
+      margin-top: 15px;
+      color: #333;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Online Learning Platforms Experience</header>
+
+  <div class="container">
+    <h2>My Experience</h2>
+    <div class="highlight">
+      Online learning platforms provide flexibility, accessibility, and interactive resources that support continuous learning.
+    </div>
+    
+    <h2>Key Benefits</h2>
+    <ul>
+      <li>📌 Flexible learning anytime, anywhere</li>
+      <li>📌 Improved self-discipline & time management</li>
+      <li>📌 Access to interactive quizzes & recorded sessions</li>
+      <li>📌 Enhanced technical & communication skills</li>
+    </ul>
+
+    <button onclick="showMore()">Read More</button>
+    <p id="extra">
+      Engaging with online platforms has allowed me to balance academics with self-paced growth. 
+      It has encouraged independent learning, collaboration with peers, and the development of essential digital skills 
+      for future career opportunities.
+    </p>
+  </div>
+
+  <script>
+    function showMore() {
+      let extraText = document.getElementById("extra");
+      if (extraText.style.display === "none") {
+        extraText.style.display = "block";
+      } else {
+        extraText.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html> 

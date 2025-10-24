@@ -1,104 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online Learning Experience</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f3f7fa;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: #0077b6;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      font-size: 24px;
-      font-weight: bold;
-    }
-    .container {
-      max-width: 900px;
-      margin: 30px auto;
-      background: white;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #0077b6;
-      margin-bottom: 10px;
-    }
-    ul {
-      margin-top: 10px;
-      line-height: 1.8;
-    }
-    .highlight {
-      background: #caf0f8;
-      padding: 8px;
-      border-left: 5px solid #0077b6;
-      margin-bottom: 15px;
-      border-radius: 5px;
-    }
-    button {
-      background: #0077b6;
-      color: white;
-      padding: 10px 18px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 16px;
-      margin-top: 20px;
-    }
-    button:hover {
-      background: #023e8a;
-    }
-    #extra {
-      display: none;
-      margin-top: 15px;
-      color: #333;
-      line-height: 1.6;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Learning Experience Portfolio</title>
+    <style>
+        /* --- Base Styles from your provided code --- */
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f7fa;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: #0077b6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #0077b6;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e0eaf1;
+            padding-bottom: 5px;
+        }
+        
+        /* --- Styles for the specific experience entries (Adapted from previous code) --- */
+        .experience-entry {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            background-color: #fcfcfc;
+            transition: transform 0.2s;
+        }
+        .experience-entry:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 119, 182, 0.1);
+        }
+        .entry-title {
+            color: #023e8a;
+            margin-top: 0;
+            font-size: 1.3em;
+        }
+        .metadata {
+            font-size: 0.9em;
+            color: #6c757d;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .tag {
+            background-color: #ade8f4;
+            color: #0077b6;
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.85em;
+        }
+        ul.skills-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 5px;
+        }
+        ul.skills-list li:before {
+            content: "•";
+            color: #0077b6;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        /* --- Styles from your provided code --- */
+        .highlight {
+            background: #caf0f8;
+            padding: 10px;
+            border-left: 5px solid #0077b6;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            font-style: italic;
+        }
+        button {
+            background: #0077b6;
+            color: white;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            display: block; /* Make button take full width for better visibility */
+            width: 100%;
+        }
+        button:hover {
+            background: #023e8a;
+        }
+        #extra {
+            display: none;
+            margin-top: 15px;
+            color: #333;
+            line-height: 1.6;
+            padding: 10px;
+            border: 1px dashed #0077b6;
+            border-radius: 6px;
+        }
+    </style>
 </head>
 <body>
 
-  <header>Online Learning Platforms Experience</header>
+    <header>Online Learning Platforms Experience</header>
 
-  <div class="container">
-    <h2>My Experience</h2>
-    <div class="highlight">
-      Online learning platforms provide flexibility, accessibility, and interactive resources that support continuous learning.
+    <div class="container">
+        <h2>My Learning Philosophy 💡</h2>
+        <div class="highlight">
+            Online learning platforms provide **flexibility, accessibility**, and interactive resources that support continuous, self-paced skill acquisition in a dynamic environment.
+        </div>
+        
+        <h2>Key Benefits Gained</h2>
+        <ul>
+            <li>📌 Flexible learning anytime, anywhere</li>
+            <li>📌 Improved **self-discipline & time management**</li>
+            <li>📌 Access to interactive quizzes & recorded sessions</li>
+            <li>📌 Enhanced technical & communication skills</li>
+        </ul>
+
+        <button onclick="showMore()">Toggle Detailed Summary</button>
+        <p id="extra">
+            Engaging with online platforms has allowed me to balance existing commitments with self-paced growth. 
+            It has encouraged **independent learning**, collaboration with peers through discussion forums, and the development of essential **digital skills** for future career opportunities.
+        </p>
+
+        <hr style="border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #0077b6, rgba(0, 0, 0, 0)); margin: 35px 0;">
+
+        <h2>Certifications & Specializations 🏆</h2>
+
+        <section class="experience-entry">
+            <h3 class="entry-title">Data Science Professional Certificate</h3>
+            
+            <div class="metadata">
+                <span class="platform">Platform: <strong>IBM via edX</strong></span>
+                <span class="date">Completed: October 2024</span>
+                <span class="type"><span class="tag">Professional Certificate</span></span>
+            </div>
+
+            <p>A comprehensive program covering the entire data science workflow, from data acquisition and cleaning to machine learning modeling and visualization.</p>
+            
+            <ul class="skills-list">
+                <li>Proficiency in **Python** and its core libraries: Pandas, NumPy, Scikit-learn, Matplotlib.</li>
+                <li>Developed a **classification model** to predict customer churn using various ML algorithms.</li>
+                <li>Experience with **SQL** for database querying and manipulation of large datasets.</li>
+            </ul>
+        </section>
+
+        <section class="experience-entry">
+            <h3 class="entry-title">React - The Complete Guide (with Hooks, Redux)</h3>
+            
+            <div class="metadata">
+                <span class="platform">Platform: <strong>Udemy</strong></span>
+                <span class="date">Duration: 55 Hours</span>
+                <span class="type"><span class="tag">Deep-Dive Course</span></span>
+            </div>
+
+            <p>Intensive training focused on modern front-end development using the React ecosystem and best practices.</p>
+            
+            <ul class="skills-list">
+                <li>Mastered functional components and **React Hooks** (`useState`, `useEffect`, etc.).</li>
+                <li>Implemented global state management using **Redux Toolkit**.</li>
+                <li>Built a complete, responsive Single Page Application (SPA) utilizing an external REST API.</li>
+            </ul>
+        </section>
+
     </div>
-    
-    <h2>Key Benefits</h2>
-    <ul>
-      <li>📌 Flexible learning anytime, anywhere</li>
-      <li>📌 Improved self-discipline & time management</li>
-      <li>📌 Access to interactive quizzes & recorded sessions</li>
-      <li>📌 Enhanced technical & communication skills</li>
-    </ul>
 
-    <button onclick="showMore()">Read More</button>
-    <p id="extra">
-      Engaging with online platforms has allowed me to balance academics with self-paced growth. 
-      It has encouraged independent learning, collaboration with peers, and the development of essential digital skills 
-      for future career opportunities.
-    </p>
-  </div>
-
-  <script>
-    function showMore() {
-      let extraText = document.getElementById("extra");
-      if (extraText.style.display === "none") {
-        extraText.style.display = "block";
-      } else {
-        extraText.style.display = "none";
-      }
-    }
-  </script>
+    <script>
+        function showMore() {
+            let extraText = document.getElementById("extra");
+            let button = document.querySelector('button');
+            if (extraText.style.display === "none" || extraText.style.display === "") {
+                extraText.style.display = "block";
+                button.textContent = "Hide Detailed Summary";
+            } else {
+                extraText.style.display = "none";
+                button.textContent = "Toggle Detailed Summary";
+            }
+        }
+    </script>
 
 </body>
-</html> 
+</html>
